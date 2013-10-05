@@ -1,3 +1,9 @@
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'classy/version'
+require 'date'
+
 Gem::Specification.new do |gem|
   gem.name    = "classy"
   gem.version = Classy::Version.string
